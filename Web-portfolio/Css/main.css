@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*CAJA INICIO*/
+.box_main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imagenes/Fondo-inicio.jpg);
+    background-position: center;
+}
+.box_text_main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 25%;
+    padding-top: 8%;
+}
+.box_text_01{
+    color: white;
+    border-left: 2px solid white;
+}
+.box_text_01 > h1{
+    margin-top: 5%;
+    margin-left: 10%;
+}
+.box_text_01 > p{
+    margin-left: 10%;
+}
+.box_text_02 > p {
+    margin-left: 10%;
+    margin-top: 5% ;
+    color: white;
+}
+.box_main_img > img{
+    width: 50%;
+}
+
+
+/*CAJA SOBRE MI*/
+.box_section{
+    width: 100%;
+    height: 100vh;
+    background-color: #eee;
+}
+.box_sobremi{
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box_sobremi > img{
+    width: 20%;
+    box-shadow: -10px 10px rgb(46, 143, 146);
+    border-radius: 100%;
+    margin-right: 5%;
+
+}
+.box_text_section > h1{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 30px;
+}
+
+.box_text_section > p{
+    margin-bottom: 2%;
+    font-size: 20px;
+}
+.lista_redes{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.redes{
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 10px 10px 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+.redes > a {
+    color: #0D7D81;
+}
+/*CAJA TECNOLOGIAS*/
+.box_aside{
+    width: 100%;
+    height: 100vh;
+    background-color: #eee;
+}
+.box_tecnologias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.box_tecnologias > h1{
+    font-size: 30px;
+}
+.box_decoration_aside{
+    margin-top: 2%;
+    width: 40px;
+    height:20px;
+    border-radius: 10px;
+    background-color: #0D7D81;
+}
+.box_tecno{
+    margin-top: 5%;
+    margin-right: 8%;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 5em;
+}
+.tecno{
+    width: 150px;
+    height: 100px;
+    align-items: center;
+    margin: auto;
+}
+ 
+.tecno > img{
+    width: 100%;
+    
+}
+
+
+
+/*CAJA CONTACTO*/
+.box_footer{
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(73, 73, 73);
+}
+.box_contacto{
+    width: 75%;
+    height: 70%;
+    margin: 0 auto;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list_footer{
+    width: 33%;
+    height: 50%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.button_foot{
+    margin-top: 30px;
+}
+
+.button_foot > a{
+    text-decoration: none;
+    color: #fff;
+}
+@media screen and (max-width:768px) {
+    body{
+        padding: 30px 5px 0px;
+    }
+    /*CAJA INICIO*/
+
+    .box_text_main{
+        flex-direction: column;
+        margin-left: 0;
+        padding-top:0;
+    }
+    .box_main_img {
+        margin-top: 0%;
+        margin-left: 20%;
+    }
+    .box_main_img > img{
+        width: 65%;
+    }
+    .box_text_01{
+        margin-top: 20%;
+        margin-left: 10%;
+    }
+
+
+
+    /*CAJA SOBREMI*/
+    .box_sobremi{
+        padding-top: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box_sobremi > img{
+        width: 30%;
+        box-shadow: -10px 10px rgb(46, 143, 146);
+        border-radius: 100%;
+        margin-right: 5%;
+    
+    }
+    .box_text_section > h1{
+        margin-left: 30%;
+        
+    }
+    
+    .box_text_section > h3{
+        margin-left: 30%;
+        margin-top: 5%;
+        
+    }
+    br {
+        display: none;
+    }
+
+        /*CAJA TECNOLOGIAS*/
+    .box_aside{
+        width: 100%;
+        height: 100vh;
+        background-color: #eee;
+    }
+    .box_tecnologias{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    .box_tecnologias > h1{
+        font-size: 20px;
+    }
+    .box_decoration_aside{
+        display: none;
+    }
+    .box_tecno{
+        margin-top: 5%;
+        margin-right: 8%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    .tecno{
+        width: 150px;
+        height: 100px;
+        align-items: center;
+        margin: auto;
+    }
+    
+    .tecno > img{
+        width: 100%;
+
+    }
+    
+    /*CAJA CONTACTO*/
+    .box_footer{
+        height:90vh;
+        background-color: rgb(73, 73, 73);
+    }
+    .box_contacto{
+        width: 75%;
+        height: 70%;
+        margin: 0 auto;
+        border-bottom: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box_contacto > img{
+        width: 100%;
+    }
+    .list_footer{
+        width: 50%;
+        height: 50%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .button_foot{
+        margin-top: 20px;
+    }
+
+    .button_foot > a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+}
+
+
+
+
+@media screen and (max-width:450px) {
+    /*CAJA INICIO*/
+    .box_text_main{
+        flex-direction: column;
+        margin-left: 0;
+        padding-top:0;
+    }
+    .box_main_img {
+        margin-top: 25%;
+        margin-right: 20%;
+    }
+    .box_main_img > img {
+        width: 100%;
+    }
+    .box_text_01{
+        margin-top: 20%;
+        margin-left: 10%;
+    }
+
+
+
+    /*CAJA SOBREMI*/
+    .box_sobremi{
+        padding-top: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box_sobremi > img{
+        width: 50%;
+        box-shadow: -10px 10px rgb(46, 143, 146);
+        border-radius: 100%;
+        margin-right: 5%;
+        margin-top: 10%;
+    
+    }
+    .box_text_section > h1{
+        margin-left: 20%;
+        
+    }
+    
+    .box_text_section > h3{
+        margin-left: 20%;
+        margin-top: 15%;
+        
+    }
+        /*CAJA CONTACTO*/
+        .box_footer{
+            height:90vh;
+            background-color: rgb(73, 73, 73);
+        }
+        .box_contacto{
+            width: 75%;
+            height: 70%;
+            margin: 0 auto;
+            border-bottom: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .box_contacto > img{
+            width: 100%;
+        }
+        .list_footer{
+            width: 100%;
+            height: 50%;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .button_foot{
+            margin-top: 20px;
+        }
+    
+        .button_foot > a{
+            text-decoration: none;
+            color: #fff;
+        }
+}

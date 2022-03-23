@@ -8,19 +8,20 @@ $('.images_nav2').bind('click',()=>{$('.list_nav').toggleClass('mostrar');})
 
 /*Scroll Menu de Navegacion*/
 var ancho = window.screen.width;
+console.log(ancho);
 if(ancho > 800){
     
-    $('#inicio').bind('click',()=>{ window.scroll(0,0);})
-    $('#sobre').bind('click',()=>{ window.scroll(0,1000)})
-    $('#tecnologias').bind('click',()=>{ window.scroll(0,2000)})
-    $('#contacto').bind('click',()=>{ window.scroll(0,3000)})
+    $('#inicio').bind('click',()=>{ window.scroll({top:0,behavior:'smooth'});})
+    $('#sobre').bind('click',()=>{ window.scroll({top:1000,behavior:'smooth'})})
+    $('#tecnologias').bind('click',()=>{ window.scroll({top:2000,behavior:'smooth'})})
+    $('#contacto').bind('click',()=>{ window.scroll({top:2500,behavior:'smooth'})})
 }
-else{
+if(ancho < 800){
             
-    $('#inicio').bind('click',()=>{ window.scroll(0,0);})
-    $('#sobre').bind('click',()=>{ window.scroll(0,700)})
-    $('#tecnologias').bind('click',()=>{ window.scroll(0,1400)})
-    $('#contacto').bind('click',()=>{ window.scroll(0,2100)})
+    $('#inicio').bind('click',()=>{ window.scroll({top:0,behavior:'smooth'});})
+    $('#sobre').bind('click',()=>{ window.scroll({top:1000,behavior:'smooth'})})
+    $('#tecnologias').bind('click',()=>{ window.scroll({top:2000,behavior:'smooth'})})
+    $('#contacto').bind('click',()=>{ window.scroll({top:3000,behavior:'smooth'})})
 }
 
 
